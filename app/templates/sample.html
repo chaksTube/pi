@@ -1,0 +1,28 @@
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Entertainment</title>
+<body style="margin: 0; padding: 0">
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jwplayer/5.10/jwplayer.js"></script>
+<div id="player_1"></div>
+<script type="text/javascript">
+// var x = str("::str")
+// var url = {{url_half}} + "";
+// alert("yo")
+// console.log(url);
+// u = url.split("::").join("/");
+// console.log(u);
+
+jwplayer('player_1').setup({
+    file: 'http://192.168.1.106:5000/' + 'static/hdd/' + "{{folder}}" + "/" + "{{file}}",
+    // file: "./AdeleHello.mp4",
+//    width: "100%",
+//    height: "100%",
+height: 360,
+width: 640,
+    stretching: "exactfit",
+    flashplayer:"http://cdn.jsdelivr.net/jwplayer/5.10/player.swf"
+  });
+</script>
+</body>
+</html>
